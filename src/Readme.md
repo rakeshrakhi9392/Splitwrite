@@ -72,14 +72,16 @@ No reader locking: readers never block each other or the writer
 
 Such separation enables near-linear read scalability on multi-core CPUs.
 
-🔬 Testing & Verification
+## 🔬 Testing & Verification
+
 SplitWrite includes both standard and Loom-based concurrency tests to ensure safety under various interleavings:
 
 tests/deque.rs: Functional and integration tests
 
 tests/loom.rs: Deterministic model checking using Loom
 
-📚 Example Use Cases
+##📚 Example Use Cases
+
 In-memory cache layers in web services
 
 Analytics dashboards where writes are infrequent
@@ -88,7 +90,8 @@ Real-time multiplayer game state replication
 
 High-throughput event sourcing or pub/sub systems
 
-📌 Future Work
+## 📌 Future Work
+
  Generalize to support other collection types (e.g., Vec, HashMap)
 
  Add benchmarks comparing with RwLock, Mutex, etc.
