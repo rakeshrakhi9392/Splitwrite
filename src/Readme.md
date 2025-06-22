@@ -50,21 +50,16 @@ Edit
 ### 🔧 Build & Run
 
 ```bash
-git clone https://github.com/your-username/SplitWrite.git
+git clone https://github.com/rakeshrakhi9392/Splitwrite.git
 cd SplitWrite
 cargo build --release
 To run tests:
-
-bash
-Copy
-Edit
 cargo test
-To run deterministic concurrency tests with Loom:
 
-bash
-Copy
-Edit
+To run deterministic concurrency tests with Loom:
 cargo test --test loom
+
+```
 💡 Design Philosophy
 This project implements a concurrency pattern based on read/write separation. It uses:
 
@@ -97,33 +92,9 @@ High-throughput event sourcing or pub/sub systems
 
  Add benchmarks comparing with RwLock, Mutex, etc.
 
- WASM compatibility for browser-based concurrency
-
  Optional async/await support for integration with async runtimes
 
-📄 License
-This project is licensed under the MIT License. See the LICENSE file for details.
 
-🤝 Contributions
-Issues, pull requests, and improvements are welcome! If you’d like to contribute or report bugs, feel free to open an issue or PR.
-
-👤 Maintainer
-Your Name
-GitHub: github.com/your-username
-LinkedIn: linkedin.com/in/your-profile
-
-yaml
-Copy
-Edit
-
----
-
-Let me know if you'd like me to:
-- Provide the Markdown as a downloadable file
-- Help you **rename the folder from `read/` to something more descriptive** (e.g., `core/`, `sync/`, etc.)
-- Add example code snippets in the README (`ReadHandle::read()`, `Writer::publish()` etc.)
-
-You’re almost ready for GitHub!
 
 
 
