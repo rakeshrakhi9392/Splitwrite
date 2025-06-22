@@ -9,6 +9,7 @@ This approach significantly reduces contention and boosts scalability in multi-c
 
 ## 📁 Folder Structure
 
+```bash
 c/
 ├── read/
 │ ├── factory.rs # Factory pattern for creating read-access handles
@@ -24,10 +25,7 @@ c/
 │ └── loom.rs # Deterministic testing with Loom for concurrency safety
 Cargo.toml # Project metadata and dependencies
 
-yaml
-Copy
-Edit
-
+```
 ---
 
 ## 🚀 Features
