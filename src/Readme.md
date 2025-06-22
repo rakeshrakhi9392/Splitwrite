@@ -60,7 +60,8 @@ To run deterministic concurrency tests with Loom:
 cargo test --test loom
 
 ```
-💡 Design Philosophy
+## 💡 Design Philosophy
+
 This project implements a concurrency pattern based on read/write separation. It uses:
 
 Dual buffers or states: one for readers and one for writers
